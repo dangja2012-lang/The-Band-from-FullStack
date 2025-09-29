@@ -1,0 +1,134 @@
+/*Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* QUY TẮC CSS:
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết
+4. Từ trái sang phải
+*/
+/*
+1. Vị trí
+2. Kích thước (width, height)
+3. Kiểu dáng (hình tròn, hình vuông, ...)
+4. Màu sắc 
+*/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+height: 46px;
+background-color: black;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+
+
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+    display: block;
+}
+
+
+#nav li { /*inline-block => make words align horizonally */
+    display: inline-block;
+    position: relative; /*important for subnav position absolute*/
+}
+
+#nav > li > a { 
+    color: #fff;
+    text-transform: uppercase
+}
+
+#nav {
+    display: inline-block;
+
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 20px;
+    display: inline-block
+}
+
+#nav li a:hover {
+    color: black;
+    background-color: gray;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#slider {
+    min-height: 500px;
+    height: 400px;
+    background-color: green;
+    margin-top: 46px;
+    
+}
+
+#nav .ti-angle-down {
+    font-size: 14px
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+    
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+    
+
+}
+
+#content {
+    height: 1000px;
+    background-color: #333;
+    
+
+}
+
+#footer {
+
+}
+
+
+
+
+
